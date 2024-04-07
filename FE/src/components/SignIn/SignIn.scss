@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.signin-container {
+  display: flex;
+  height: 100vh; /* Change to 100vh */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%; /* Ensure the image does not overflow */
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+.signin-container .form-container .MuiButton-containedPrimary {
+  background-color: blue; /* Google red */
+  color: #fff; /* White text */
+}
+
+/* Styles for GitHub button */
+.signin-container .form-container .MuiButton-containedSecondary {
+  background-color: white; /* Black */
+  color: white; /* White text */
+}
+@media (max-width: 600px), (max-height: 600px) {
+  .image-container {
+    display: none; /* Hide the image container on smaller screens */
+  }
+}
